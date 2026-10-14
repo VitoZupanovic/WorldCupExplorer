@@ -1,0 +1,46 @@
+﻿<Window
+    x:Class="WPF.ConfirmExitWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WPF"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Confirm exit"
+    Width="360"
+    Height="170"
+    ResizeMode="NoResize"
+    WindowStartupLocation="CenterOwner"
+    mc:Ignorable="d">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            VerticalAlignment="Center"
+            FontSize="14"
+            Text="Are you sure you want to close the application?"
+            TextWrapping="Wrap" />
+
+        <StackPanel
+            Grid.Row="1"
+            HorizontalAlignment="Right"
+            Orientation="Horizontal">
+            <Button
+                Name="btnYes"
+                Width="90"
+                Margin="0,0,10,0"
+                Click="btnYes_Click"
+                Content="Yes"
+                IsDefault="True" />
+
+            <Button
+                Name="btnNo"
+                Width="90"
+                Click="btnNo_Click"
+                Content="No"
+                IsCancel="True" />
+        </StackPanel>
+    </Grid>
+</Window>

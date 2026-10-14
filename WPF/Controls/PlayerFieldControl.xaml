@@ -1,0 +1,38 @@
+﻿<UserControl
+    x:Class="WPF.PlayerFieldControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WPF"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="100"
+    Height="55"
+    mc:Ignorable="d">
+    <Border
+        Padding="5"
+        Background="#AA1E1E1E"
+        BorderBrush="White"
+        BorderThickness="1"
+        CornerRadius="8">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image
+                Name="imgPlayer"
+                Width="24"
+                Height="24"
+                Margin="0,0,0,5"
+                Stretch="UniformToFill" />
+
+            <TextBlock
+                Name="txtPlayer"
+                MaxWidth="90"
+                HorizontalAlignment="Center"
+                FontSize="9"
+                FontWeight="Bold"
+                Foreground="White"
+                Text="#10 PLAYER"
+                TextAlignment="Center"
+                TextTrimming="CharacterEllipsis"
+                TextWrapping="NoWrap" />
+        </StackPanel>
+    </Border>
+</UserControl>

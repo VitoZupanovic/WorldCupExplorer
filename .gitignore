@@ -1,0 +1,28 @@
+# Visual Studio settings
+.vs/
+*.user
+*.suo
+*.rsuser
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+publish/
+artifacts/
+
+# Local application settings and favorites
+app_settings.txt
+wpf_settings.txt
+favorite_team.txt
+favorite_players.txt
+player_images.txt
+
+# Editors
+.idea/
+.vscode/
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
